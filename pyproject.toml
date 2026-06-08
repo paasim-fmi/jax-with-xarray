@@ -1,0 +1,22 @@
+[project]
+name = "jaxx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+  "cartopy",
+  "cfgrib",
+  "flax",
+  "gdm-xarray-jax",
+  "jax", # change this to jax[cuda12] or jax[cuda13] to run using a gpu
+  "matplotlib",
+  "netcdf4",
+  "optax",
+  "tqdm",
+  "xarray",
+  "zarr",
+]
+
+[tool.uv.sources]
+gdm-xarray-jax = { git = "https://github.com/google-deepmind/xarray_jax.git", rev = "v0.1.0" }
